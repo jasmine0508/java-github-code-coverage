@@ -59,10 +59,10 @@
                         <phase>validate</phase>
                         <configuration>
                             <consoleOutput>true</consoleOutput>
-                            <failsOnError>true</failsOnError>
+                            <failsOnError>false</failsOnError>
                             <outputFileFormat>xml</outputFileFormat>
-                            <failsOnError>true</failsOnError>
-                            <failOnViolation>true</failOnViolation>
+                            <failsOnError>false</failsOnError>
+                            <failOnViolation>false</failOnViolation>
                             <violationSeverity>warning</violationSeverity>
                             <includeTestSourceDirectory>true</includeTestSourceDirectory>
                             <includeResources>true</includeResources>

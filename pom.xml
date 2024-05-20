@@ -18,16 +18,16 @@
       	        <sonar.organization>codecoveragetesting</sonar.organization>
                 <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.coverage.jacoco.xmlReportPaths>
-    ${project.build.directory}/site/jacoco-aggregate/jacoco.xml
+    ${project.basedir}/site/jacoco-aggregate/jacoco.xml
   </sonar.coverage.jacoco.xmlReportPaths>
 		<checkstyle.version>10.13.0</checkstyle.version>
         <maven.checkstyle.version>3.3.1</maven.checkstyle.version>
         <!-- Sonar properties -->
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
-        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco-ut/jacoco.xml
+        <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/site/jacoco-ut/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
         <checkstyle.config.location>${project.basedir}/harman_checks.xml</checkstyle.config.location>
-        <sonar.java.checkstyle.reportPaths>${project.build.directory}/checkstyle-result.xml
+        <sonar.java.checkstyle.reportPaths>${project.basedir}/checkstyle-result.xml
         </sonar.java.checkstyle.reportPaths>
         </properties>
 	<dependencies>

@@ -26,7 +26,7 @@
         <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
         <sonar.coverage.jacoco.xmlReportPaths>${project.basedir}/site/jacoco-ut/jacoco.xml
         </sonar.coverage.jacoco.xmlReportPaths>
-        <checkstyle.config.location>${project.basedir}/harman_checks.xml</checkstyle.config.location>
+        <checkstyle.config.location>${project.basedir}/custom_checks.xml</checkstyle.config.location>
         <sonar.java.checkstyle.reportPaths>${project.basedir}/checkstyle-result.xml
         </sonar.java.checkstyle.reportPaths>
         </properties>

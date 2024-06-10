@@ -41,6 +41,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.demo</groupId>
+			<artifactId>new-github-demo-app</artifactId>
+			<version>0.0.2</version>
+		</dependency>
 	</dependencies>
 	<distributionManagement>
    <repository>

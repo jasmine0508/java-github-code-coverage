@@ -105,6 +105,13 @@
                         <version>${checkstyle.version}</version>
                     </dependency>
                 </dependencies>
+					<distributionManagement>
+   <repository>
+     <id>github</id>
+     <name>GitHub OWNER Apache Maven Packages</name>
+     <url>https://maven.pkg.github.com/jasmine0508/new-github</url>
+   </repository>
+</distributionManagement>
             </plugin>
 		</plugins>
 	</build>

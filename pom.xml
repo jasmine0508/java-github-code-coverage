@@ -44,16 +44,10 @@
 		<dependency>
 			<groupId>com.demo</groupId>
 			<artifactId>new-github-demo-app</artifactId>
-			<version>0.0.2</version>
+			<version>0.0.3</version>
 		</dependency>
 	</dependencies>
-	<distributionManagement>
-   <repository>
-     <id>github</id>
-     <name>GitHub OWNER Apache Maven Packages</name>
-     <url>https://maven.pkg.github.com/jasmine0508/new-github</url>
-   </repository>
-</distributionManagement>
+
 
 	<build>
 		<plugins>

@@ -36,7 +36,7 @@ jobs:
         owner: ${{ github.repository_owner }}
         # Name of the package containing the version to delete.
     
-        package-name: com.demo.demo-libs-test
+        package-name: com.demo.demo-app-jasmine
         # Type of package. Can be one of container, maven, npm, nuget, or rubygems.
     
         package-type:  'maven'

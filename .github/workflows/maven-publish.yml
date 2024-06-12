@@ -41,7 +41,7 @@ jobs:
     
         package-type:  'maven'
         # Number of versions to delete starting with the oldest version. Defaults to 1.
-        token: ${{ secrets.MVN_PKG_UPLOAD }}
+        token: ${{ secrets.MAVEN_PKG_TOKEN }}
 
     - name: Maven Install
       run: mvn -DskipTests=true clean install

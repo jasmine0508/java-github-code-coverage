@@ -26,11 +26,14 @@ jobs:
         distribution: 'temurin'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
     - name: Delete Package Versions
       uses: actions/delete-package-versions@v5.0.0
       with:
         # Comma separated string of package version ids to delete.
-        package-version-ids: '2'
+        package-version-ids: ${{ steps.package-version.outputs.current-version}}
         # Owner of the repo containing the package version to delete. Defaults to the owner of the repo running the action.
     
         owner: ${{ github.repository_owner }}

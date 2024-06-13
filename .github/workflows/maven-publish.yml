@@ -35,13 +35,13 @@ jobs:
       uses: actions/delete-package-versions@v5.0.0
       with:
         # Comma separated string of package version ids to delete.
-        package-version-ids: '2'
+        # package-version-ids: '2'
         # Owner of the repo containing the package version to delete. Defaults to the owner of the repo running the action.
     
         owner: ${{ github.repository_owner }}
         # Name of the package containing the version to delete.
     
-        package-name: com.demo.demo-app-jasmine
+        package-name: com.demo.demo-app-jasmine-1
         # Type of package. Can be one of container, maven, npm, nuget, or rubygems.
     
         package-type:  'maven'

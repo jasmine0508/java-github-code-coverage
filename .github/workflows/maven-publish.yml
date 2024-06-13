@@ -35,7 +35,7 @@ jobs:
       uses: actions/delete-package-versions@v5.0.0
       with:
         # Comma separated string of package version ids to delete.
-        package-version-ids: '2'
+        package-version-ids: '34660928'
         # Owner of the repo containing the package version to delete. Defaults to the owner of the repo running the action.
     
         owner: ${{ github.repository_owner }}

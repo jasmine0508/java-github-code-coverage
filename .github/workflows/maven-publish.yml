@@ -31,6 +31,22 @@ jobs:
       uses: martinbeentjes/npm-get-version-action@v1.3.1
       with:
         path: packages/2177374
+    - name: Delete Package Versions
+      uses: actions/delete-package-versions@v5.0.0
+      with:
+        # Comma separated string of package version ids to delete.
+        package-version-ids: '2'
+        # Owner of the repo containing the package version to delete. Defaults to the owner of the repo running the action.
+    
+        owner: ${{ github.repository_owner }}
+        # Name of the package containing the version to delete.
+    
+        package-name: com.demo.demo-app-jasmine
+        # Type of package. Can be one of container, maven, npm, nuget, or rubygems.
+    
+        package-type:  'maven'
+        # Number of versions to delete starting with the oldest version. Defaults to 1.
+        token: ${{ secrets.MAVEN_PKG_TOKEN_2 }}    
         
     - name: Maven Install
       run: mvn -DskipTests=true clean install

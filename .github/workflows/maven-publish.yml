@@ -26,11 +26,11 @@ jobs:
         distribution: 'temurin'
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
-#    - name: get-npm-version
- #     id: package-version
-  #    uses: martinbeentjes/npm-get-version-action@v1.3.1
-   #   with:
-    #    path: packages/com.demo.demo-app-jasmine
+    - name: get-npm-version
+      id: package-version
+      uses: martinbeentjes/npm-get-version-action@v1.3.1
+      with:
+        path: packages/2177374
         
     - name: Maven Install
       run: mvn -DskipTests=true clean install
